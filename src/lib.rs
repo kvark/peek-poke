@@ -37,9 +37,6 @@ fn copy_to_slice(src: *const u8, slice: &mut [u8]) -> *const u8 {
     }
 }
 
-#[cfg(feature = "extras")]
-mod euclid;
-
 /// A trait for values that provide serialization into buffers of bytes.
 ///
 /// # Example
