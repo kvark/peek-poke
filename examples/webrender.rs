@@ -104,7 +104,7 @@ pub fn main() {
             0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 0, 1
         ]
     );
-    let mut y: CommonItemProperties = unsafe { std::mem::uninitialized() };
+    let mut y: CommonItemProperties = unsafe { std::mem::zeroed() };
     peek_from(&mut y, &bytes);
     println!("{:?}", y);
     assert_eq!(x, y);
